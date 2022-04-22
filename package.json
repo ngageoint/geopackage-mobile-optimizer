@@ -12,15 +12,16 @@
     "url": "https://www.nga.mil"
   },
   "contributors": [
-    "Daniel Barela <daniel.barela@gmail.com>"
+    "Daniel Barela <daniel.barela@gmail.com>",
+    "Christopher Caldwell <c.caldwell90@gmail.com>"
   ],
-  "homepage": "http://ngageoint.github.io/geopackage-js/",
+  "homepage": "http://ngageoint.github.io/geopackage-mobile-optimizer/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngageoint/geopackage-js.git"
+    "url": "https://github.com/ngageoint/geopackage-mobile-optimizer.git"
   },
   "bugs": {
-    "url": "https://github.com/ngageoint/geopackage-js/issues"
+    "url": "https://github.com/ngageoint/geopackage-mobile-optimizer/issues"
   },
   "main": "index.js",
   "bin": {

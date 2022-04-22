@@ -28,6 +28,7 @@ const async = require('async');
 
 const geoPackageFile = '/path/to/file/to/convert.gpkg';
 const outputGeoPackageFile = '/path/to/file/to/create.gpkg';
+const same = outputGeoPackageFile === geoPackageFile;
 
 setCanvasKitWasmLocateFile(file => path.join(__dirname, 'node_modules', '@ngageoint', 'geopackage', 'dist', 'canvaskit', file));
 
@@ -62,7 +63,7 @@ async.series({
       console.log('Failed to convert with error', err);
       process.exit(1);
     } else {
-      GeoPackageOptimizer(results.geoPackage, results.outputGeoPackage, (err) => {
+      GeoPackageOptimizer.optimize({inputGeoPackage: results.geoPackage, outputGeoPackage: results.outputGeoPackage, same: same}, (err) => {
         if (err) {
           console.error('Optimization Failed: ' + err);
         } else {

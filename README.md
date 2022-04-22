@@ -22,7 +22,7 @@ $ npm install @ngageoint/geopackage-mobile-optimizer
 ```javascript
 const fs = require('fs');
 const { GeoPackageAPI, setCanvasKitWasmLocateFile } = require('@ngageoint/geopackage');
-const GeoPackageOptimizer = require('./mobile-optimizer');
+const GeoPackageOptimizer = require('@ngageoint/geopackage-mobile-optimizer');
 const path = require('path');
 const async = require('async');
 
